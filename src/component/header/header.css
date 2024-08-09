@@ -1,0 +1,93 @@
+.header{
+    background-color: #282f3e;
+}
+/* NavBar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+.logo {
+    font-size: 24px;
+    color: #fd0100;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-contact {
+    background-color: #fd0100;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.line{
+    margin: 50px 0;
+    padding: 50px 0;
+    border-top: 1px solid #F3D1BF;
+}
+
+
+/* Section Hero */
+
+.hero-container{
+    margin: 0 10%;;
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.hero-text h1 {
+    color: #fd0100;
+    font-size: 16px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    
+}
+
+.hero-text h2 {
+    color: #fff;
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    color: #e2d6d6;
+    font-size: 16px;
+    margin-bottom: 30px;
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+.hero-buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.btn-primary {
+    background-color: #fd0100;
+    color: #fff;
+}
+
+.btn-secondary {
+    color: #fff;
+    
+}
