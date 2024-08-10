@@ -1,5 +1,7 @@
 import React from 'react';
 import './header.css';
+import image1 from '../../assets/images/image1.png';
+
 
 
 const Header = () => {
@@ -35,7 +37,7 @@ const Header = () => {
                         </div>
                     </div>
                     <div className="hero-images">
-                        <img src="image1.png" alt="Image 2" />
+                    <img src={image1} alt="Hero" />
                     </div>
                 </section>
                 <section className="line"></section>
