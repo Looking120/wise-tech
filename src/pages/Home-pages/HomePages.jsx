@@ -1,10 +1,11 @@
 import React from 'react';
-import Header from '../component/header/header';
+import './HomePages.css';
 
-const Pages = () => {
+
+const HomePages = () => {
     return (
         <>
-            <Header />
+            
             <div className="container">
 
             </div>
@@ -13,8 +14,7 @@ const Pages = () => {
 
             </div>
         </>
-
     );
 }
 
-export default Pages;
+export default HomePages;
