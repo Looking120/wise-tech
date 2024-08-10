@@ -1,0 +1,156 @@
+.features-section {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.features-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.features-text {
+    max-width: 500px;
+}
+
+.features-text h3 {
+    color: #fd0100;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.features-text h2 {
+    font-size: 36px;
+    line-height: 1.3;
+}
+.features-text p{
+    color: #605555;
+}
+.features-text ul {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+    color: #605555;
+}
+
+.features-text ul li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.features-text ul li:before {
+    content: '✔';
+    color: #fd0100;
+    margin-right: 10px;
+}
+
+.features-image {
+    position: relative;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+}
+
+.features-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    max-width: 300px;
+    border: 1px solid #f3d1bf; 
+}
+
+.cards {
+    padding: 20px;
+    text-align: left;
+    flex: 1;
+    max-width: 300px;
+}
+
+
+.cards .cards-links a {
+    text-decoration: none;
+    color: #fd0100;
+}
+
+.cards h4 {
+    color: #fd0100;
+}
+.cards p{
+    color: #605555;
+}
+
+.card-group {
+    display: flex;
+    gap: 0; 
+    
+}
+.large{
+    flex: 1.7;
+    padding: 20px;
+    border: 1px solid #f3d1bf; 
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.small-card {
+    flex: 1;
+}
+.small-text{
+    text-align: left;
+}
+
+.small-text h4{
+    font-size: 24px;
+    margin-bottom: 10px; 
+}
+
+.small-text p{
+    font-size: 16px;
+    color: #605555;
+}
+
+.large-card {
+    flex: 1.7;
+    background-color:#fff;
+    padding: 20px;
+    border: 1px solid #f3d1bf; 
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.card-icon {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 10px;
+}
+
+.card-icon img {
+    width: 80px; 
+    height: auto; 
+
+}
+
+.large-card h4 {
+    font-size: 24px;
+    margin-bottom: 10px; 
+}
+
+.large-card p {
+    font-size: 16px;
+    color: #605555;
+}
