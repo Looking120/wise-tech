@@ -1,0 +1,156 @@
+.contact-info-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.info-container {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+
+.info-item {
+    display: flex;
+    align-items: center;
+    flex-direction: row; 
+    padding: 15px;
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    background-color: #f9f9f9; 
+    margin: 10px; 
+    width: 340px; 
+    height: 120px;
+}
+
+
+.info-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; 
+}
+
+.info-icon img {
+    width: 60px;
+    height: 60px; 
+}
+
+
+.info-content {
+    display: flex;
+    flex-direction: column; 
+}
+
+
+.info-item h4 {
+    font-size: 20px;
+    margin: 0 0 10px 0; 
+}
+
+.info-item p {
+    font-size: 16px;
+    color: #666;
+    margin: 0; 
+}
+/* For large devices (992px and below) */
+@media screen and (max-width: 992px) {
+    .info-item {
+        width: 100%; 
+        max-width: 600px; 
+        flex-direction: row; 
+        align-items: center; 
+        margin-left: 3.2rem;
+    }
+
+    .info-icon {
+        margin-right: 20px; 
+    }
+
+    .info-icon img {
+        width: 60px; 
+        height: 60px; 
+    }
+}
+
+/* For medium devices (768px and below) */
+@media screen and (max-width: 768px) {
+    .info-item {
+        flex-direction: row; 
+        width: 90%; 
+        height: auto; 
+        padding: 30px; 
+        align-items: flex-start; 
+        margin-left: 2rem;
+        
+    }
+
+    .info-icon {
+        margin-right: 20px;
+    }
+
+    .info-icon img {
+        width: 50px; 
+        height: 50px; 
+    }
+
+    .info-item h4 {
+        font-size: 18px; 
+    }
+
+    .info-item p {
+        font-size: 14px; 
+    }
+}
+
+/* For small devices (576px and below) */
+@media screen and (max-width: 576px) {
+    .info-item {
+        flex-direction: row;
+        padding: 25px; 
+        align-items: flex-start; 
+    }
+
+    .info-icon {
+        margin-right: 30px; 
+    }
+
+    .info-icon img {
+        width: 40px; 
+        height: 40px; 
+    }
+
+    .info-item h4 {
+        font-size: 17px; 
+    }
+
+    .info-item p {
+        font-size: 12px; 
+    }
+}
+
+/* For extra small devices (350px and below) */
+@media screen and (max-width: 350px) {
+    .info-item {
+        flex-direction: row; 
+        padding: 8px; 
+        align-items: flex-start; 
+    }
+
+    .info-icon {
+        margin-right: 8px; 
+    }
+
+    .info-icon img {
+        width: 300px; 
+        height: 30px; 
+    }
+
+    .info-item h4 {
+        font-size: 14px; 
+    }
+
+    .info-item p {
+        font-size: 10px; 
+    }
+}

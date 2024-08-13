@@ -56,3 +56,120 @@
     text-align: left; 
     color: #605555;
 }
+
+/* Pour les grands appareils */
+@media screen and (max-width: 992px) {
+    .video-reel {
+        margin: 40px 0;
+        padding: 40px 0;
+    }
+
+    .video {
+        padding-right: 30px;
+    }
+
+    .play-icon {
+        font-size: 36px;
+        padding: 15px;
+    }
+
+    .video-text h2 {
+        font-size: 24px;
+    }
+
+    .video-text h3 {
+        font-size: 14px;
+    }
+
+    .video-text p {
+        font-size: 14px;
+    }
+}
+
+/* Pour les appareils moyens */
+@media screen and (max-width: 768px) {
+    .video-reel {
+        flex-direction: column-reverse; /* Vidéo en bas */
+        margin: 30px 0;
+        padding: 30px 0;
+    }
+
+    .video {
+        padding-right: 0;
+        margin-top: 20px; /* Espacement entre le texte et la vidéo */
+    }
+
+    .video-text {
+        padding: 0 15px;
+    }
+
+    .play-icon {
+        font-size: 32px;
+        padding: 12px;
+    }
+
+    .video-text h2 {
+        font-size: 22px;
+    }
+
+    .video-text h3 {
+        font-size: 14px;
+    }
+
+    .video-text p {
+        font-size: 14px;
+    }
+}
+
+/* Pour les petits appareils */
+@media screen and (max-width: 576px) {
+    .video-reel {
+        margin: 20px 0;
+        padding: 20px 0;
+    }
+
+    .video {
+        margin-top: 20px; /* Espacement entre le texte et la vidéo */
+    }
+
+    .play-icon {
+        font-size: 28px;
+        padding: 10px;
+    }
+
+    .video-text h2 {
+        font-size: 20px;
+    }
+
+    .video-text h3 {
+        font-size: 12px;
+    }
+
+    .video-text p {
+        font-size: 13px;
+    }
+}
+
+/* Pour les très petits appareils */
+@media screen and (max-width: 350px) {
+    .play-icon {
+        font-size: 24px;
+        padding: 8px;
+    }
+
+    .video-text h2 {
+        font-size: 18px;
+    }
+
+    .video-text h3 {
+        font-size: 11px;
+    }
+
+    .video-text p {
+        font-size: 12px;
+    }
+
+    .video {
+        margin-top: 15px; 
+    }
+}

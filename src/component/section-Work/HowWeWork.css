@@ -60,3 +60,106 @@
     color: #333;
     margin: 0; 
 }
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .how-we-work h3 {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    .text-section h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .text-section p {
+        font-size: 15px;
+    }
+
+    .steps-section {
+        gap: 15px;
+    }
+
+    .step h1 {
+        font-size: 40px;
+    }
+
+    .step p {
+        font-size: 15px;
+    }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .how-we-work-content {
+        flex-direction: column;
+    }
+
+    .text-section {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .steps-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .step h1 {
+        font-size: 36px;
+    }
+
+    .step p {
+        font-size: 14px;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 576px) {
+    .how-we-work h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .text-section h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .text-section p {
+        font-size: 14px;
+    }
+
+    .step h1 {
+        font-size: 32px;
+    }
+
+    .step p {
+        font-size: 13px;
+    }
+}
+
+/* For extra small devices */
+@media screen and (max-width: 350px) {
+    .how-we-work h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .text-section h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .text-section p {
+        font-size: 12px;
+    }
+
+    .step h1 {
+        font-size: 28px;
+    }
+
+    .step p {
+        font-size: 12px;
+    }
+}

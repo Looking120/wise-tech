@@ -1,0 +1,186 @@
+.departments-section {
+    text-align: center;
+    padding: 50px 20px;
+    margin: 0 110px; 
+}
+
+.department-title {
+    color: #fd0100;
+}
+
+.departments-section h2 {
+    font-size: 35px;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.line-break {
+    display: block;
+}
+
+.step-departments {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    margin: 20px 0;
+}
+
+.departments {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.department {
+    padding: 30px;
+    width: 30%;
+    border-radius: 8px;
+    text-align: left;
+    border: 1px solid #3A3c56; 
+    box-sizing: border-box;
+}
+
+.department h3 {
+    color: #fff;
+    font-size: 5rem;
+    margin: 0;
+}
+
+.department h4 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.department-title h4 {
+    display: block;
+}
+
+.department span {
+    color: #eee9e5;
+    margin: 0;
+    font-size: 1.2rem; 
+    display: block;
+}
+
+.department p {
+    color: #c2c7d6;
+    margin-top: 20px; 
+    font-size: 0.9rem; 
+    font-weight: normal;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #3A3c56; 
+    margin: 10px 0;
+}
+
+.explore {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: left;
+    text-decoration: none;
+}
+
+.explore-more {
+    margin-top: 40px;
+}
+
+/* Pour les grands appareils (tablettes et plus grands) */
+@media screen and (max-width: 992px) {
+    .departments-section {
+        margin: 0 60px;
+        padding: 100px 50px;
+    }
+
+    .departments {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .department {
+        width: 80%;
+        padding: 20px;
+        border-radius: 6px; 
+    }
+}
+
+/* Pour les appareils moyens (tablettes en mode portrait) */
+@media screen and (max-width: 768px) {
+    .departments-section {
+        margin: 0 30px;
+        padding: 30px 10px;
+    }
+
+    .departments {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .department {
+        width: 90%;
+        padding: 15px;
+        border-radius: 6px; 
+    }
+    
+}
+
+/* Pour les petits appareils (téléphones en mode portrait) */
+@media screen and (max-width: 576px) {
+    .departments-section {
+        margin: 0 15px;
+        padding: 60px 40px;
+    }
+    .departments-section h2 {
+        font-size: 1.5rem;
+        margin-top: 10px;
+        
+    }
+    .department {
+        width: 100%;
+        padding: 30px;
+        border-radius: 4px; 
+    }
+    .department h3 {
+        font-size: 3rem; 
+    }
+
+    .department h4 {
+        font-size: 1rem;
+    }
+}
+
+/* Pour les très petits appareils (téléphones en mode portrait) */
+@media screen and (max-width: 350px) {
+    .departments-section {
+        margin: 0 10px;
+        padding: 70px 40px;
+    }
+    .departments-section h2 {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    .department {
+        padding: 8px;
+        border-radius: 4px; 
+    }
+
+    .department h3 {
+        font-size: 2rem; 
+    }
+
+    .department h4 {
+        font-size: 0.8rem; 
+    }
+
+    .explore {
+        padding: 8px 12px;
+    }
+}

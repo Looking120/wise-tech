@@ -1,3 +1,4 @@
+/* Styles généraux */
 .portfolio-header h4 {
     color: #ff6a6a;
     font-weight: 600;
@@ -79,5 +80,70 @@
 
 .portfolio-footer {
     margin-top: 60px;
-    
+}
+
+/* Responsive - Pour les grands appareils (max-width: 992px) */
+@media screen and (max-width: 992px) {
+    .portfolio-header h2 {
+        font-size: 32px;
+    }
+    .gallery-item {
+        width: calc(25% - 10px); /* 4 items par ligne */
+    }
+    .gallery-item img {
+        transition: transform 0.4s ease; /* Ajustement de la durée de transition */
+    }
+}
+
+/* Responsive - Pour les appareils moyens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .portfolio-header h2 {
+        font-size: 28px;
+    }
+    .portfolio-filter .filter {
+        padding: 5px 10px;
+        margin: 0 5px;
+    }
+    .gallery-item {
+        width: calc(33.33% - 10px); /* 3 items par ligne */
+    }
+    .gallery-item img {
+        transition: transform 0.5s ease; /* Durée de transition légèrement plus longue */
+    }
+}
+
+/* Responsive - Pour les petits appareils (max-width: 576px) */
+@media screen and (max-width: 576px) {
+    .portfolio-header h2 {
+        font-size: 24px;
+    }
+    .gallery-item {
+        width: calc(45% - 10px); /* Réduction de la largeur des éléments */
+    }
+    .portfolio-filter .filter {
+        padding: 4px 8px;
+        margin: 0 3px;
+        font-size: 12px;
+    }
+    .gallery-item img {
+        transition: transform 0.6s ease; /* Transition plus lente pour les petits écrans */
+    }
+}
+
+/* Responsive - Pour les très petits appareils (max-width: 350px) */
+@media screen and (max-width: 350px) {
+    .portfolio-header h2 {
+        font-size: 20px;
+    }
+    .gallery-item {
+        width: 100%; /* 1 item par ligne */
+    }
+    .portfolio-filter .filter {
+        padding: 3px 6px;
+        margin: 0 2px;
+        font-size: 10px;
+    }
+    .gallery-item img {
+        transition: none; /* Désactivation de l'animation pour améliorer les performances */
+    }
 }

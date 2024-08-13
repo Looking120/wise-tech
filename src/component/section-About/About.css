@@ -25,7 +25,6 @@
     border-radius: 10px;
 }
 
-
 .about-text {
     flex: 1;
     padding-left: 50px;
@@ -76,7 +75,158 @@
     color: #666;
 }
 
-.btn-about-us{
+.btn-about-us {
     background-color: #fd0100;
     color: #fff;
+}
+/* Pour les grands appareils */
+@media screen and (max-width: 992px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .about-image {
+        order: 2;
+        max-width: 85%;
+    }
+
+    .about-text {
+        order: 1;
+        padding-left: 0;
+        text-align: left;
+    }
+
+    .about-stats {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .stat-item {
+        padding: 20px 0;
+    }
+}
+
+/* Pour les appareils moyens */
+@media screen and (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .about-image {
+        order: 2;
+        max-width: 75%;
+    }
+
+    .about-text {
+        order: 1;
+        padding-left: 0;
+        text-align: left;
+    }
+
+    .about-text h2 {
+        font-size: 28px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+
+    .about-stats {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .stat-item h4 {
+        font-size: 20px;
+    }
+
+    .stat-item p {
+        font-size: 14px;
+    }
+
+    .btn-about-us {
+        padding: 10px 20px;
+    }
+}
+
+/* Pour les petits appareils */
+@media screen and (max-width: 576px) {
+    .about-content {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .about-image {
+        order: 2;
+        max-width: 65%;
+    }
+
+    .about-text {
+        order: 1;
+    }
+
+    .about-text h2 {
+        font-size: 24px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+
+    .about-stats {
+        gap: 10px;
+    }
+
+    .stat-item h4 {
+        font-size: 18px;
+    }
+
+    .stat-item p {
+        font-size: 12px;
+    }
+
+    .btn-about-us {
+        padding: 8px 16px;
+    }
+}
+
+/* Pour les très petits appareils */
+@media screen and (max-width: 350px) {
+    .about-image {
+        order: 2;
+        max-width: 55%;
+    }
+
+    .about-text {
+        order: 1;
+    }
+
+    .about-text h2 {
+        font-size: 20px;
+    }
+
+    .about-text p {
+        font-size: 12px;
+    }
+
+    .about-stats {
+        padding: 10px;
+    }
+
+    .stat-item h4 {
+        font-size: 16px;
+    }
+
+    .stat-item p {
+        font-size: 10px;
+    }
+
+    .btn-about-us {
+        padding: 6px 12px;
+    }
 }

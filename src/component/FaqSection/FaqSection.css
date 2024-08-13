@@ -1,0 +1,251 @@
+/* Effet de survol pour les cartes */
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+.faq-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    margin: 0 100px; 
+}
+
+.faq-left {
+    width: 40%;
+}
+
+.faq-subtitle {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.faq-title {
+    font-size: 20px;
+    color: #fd0100;
+}
+
+.faq-left p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.contact-link {
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+}
+
+/* Nouvelle boîte autour de .faq-right */
+.faq-right-box {
+    width: 40%;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #f3d1bf;
+    margin: 0 auto;
+}
+
+.faq-right {
+    width: 100%;
+}
+
+.faq-item {
+    padding: 20px 0;
+    position: relative;
+}
+
+.faq-item input[type="checkbox"] {
+    position: absolute;
+    right: 20px; /* Ajuste la position du checkbox pour tenir compte des marges */
+    top: 20px;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.faq-item label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.faq-item label:hover {
+    background-color: #f7f7f7;
+}
+
+.faq-content {
+    display: none;
+    margin-top: 10px;
+    padding-left: 20px;
+    font-size: 16px;
+    color: #555;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.faq-item input[type="checkbox"]:checked ~ .faq-content {
+    display: block;
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    transition: transform 0.3s;
+    position: absolute;
+    right: 20px;
+}
+
+.faq-item input[type="checkbox"]:checked + label .arrow {
+    transform: rotate(180deg);
+}
+
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .faq-section {
+        flex-direction: column;
+        margin: 0 20px;
+        padding: 40px;
+    }
+
+    .faq-left,
+    .faq-right-box {
+        width: 100%;
+    }
+
+    .pricing-card:hover {
+        transform: translateY(-5px);
+    }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .faq-section {
+        padding: 30px;
+    }
+
+    .faq-left {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .faq-right-box {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .faq-subtitle {
+        font-size: 28px;
+    }
+
+    .faq-title {
+        font-size: 18px;
+    }
+
+    .faq-left p {
+        font-size: 14px;
+    }
+
+    .contact-link {
+        font-size: 14px;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 576px) {
+    .faq-section {
+        padding: 20px;
+    }
+
+    .faq-subtitle {
+        font-size: 24px;
+    }
+
+    .faq-title {
+        font-size: 16px;
+    }
+
+    .faq-left p {
+        font-size: 12px;
+    }
+
+    .contact-link {
+        font-size: 12px;
+    }
+
+    .faq-item input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+    }
+
+    .faq-item label {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .faq-content {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .arrow {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+/* For very small devices */
+@media screen and (max-width: 350px) {
+    .faq-section {
+        padding: 10px;
+    }
+    .faq-subtitle {
+        font-size: 20px;
+    }
+
+    .faq-title {
+        font-size: 14px;
+    }
+
+    .faq-left p {
+        font-size: 10px;
+    }
+
+    .contact-link {
+        font-size: 10px;
+    }
+
+    .faq-item input[type="checkbox"] {
+        width: 14px;
+        height: 14px;
+    }
+
+    .faq-item label {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .faq-content {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .arrow {
+        width: 14px;
+        height: 14px;
+    }
+}

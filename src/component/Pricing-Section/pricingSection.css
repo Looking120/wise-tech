@@ -1,0 +1,258 @@
+.pricing-section {
+    padding: 50px 10%;
+}
+
+.pricing-section h4 {
+    color: #fd0100;
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.pricing-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.pricing-grid {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+}
+
+.pricing-card {
+    border: 1px solid #f3d1bf;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    flex: 1;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card .title {
+    color: #fd0100;
+    text-align: left;
+}
+
+.pricing-card h3 {
+    color: #333;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.pricing-card h2 {
+    color: #fd0100;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.pricing-card p{
+    font-size: 18px;
+}
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.pricing-card ul li {
+    font-size: 16px;
+    color: #605555;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.pricing-card ul li i {
+    color: #fd0100;
+    margin-right: 10px;
+}
+
+.pricing-card button {
+    background-color: #fd0100;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.title-container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1px; /* Ajuste le padding si nécessaire */
+    font-size: 10px;
+}
+
+.title-container h3 {
+    font-size: 1rem;
+    text-align: left;
+    background-color: #fd0100;
+    border-radius: 15px;
+    padding: 8px;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    display: inline-block;
+    color: #fff;
+}
+
+.pricing-card ul li .icon-blur {
+    color: #f6daca;
+}
+
+.pricing-card.popular {
+    background-color: #fff;
+}
+
+/* Effet de survol pour les cartes */
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Pour les grands dispositifs (plus de 992px) */
+@media screen and (min-width: 993px) {
+    .pricing-section {
+        padding: 50px 10%;
+    }
+
+    .pricing-grid {
+        gap: 20px;
+    }
+
+    .pricing-card {
+        max-width: 300px;
+    }
+
+    .title-container {
+        padding: 1px;
+    }
+}
+
+/* Pour les dispositifs moyens (768px à 992px) */
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .pricing-section {
+        padding: 40px 20%;
+    }
+
+    .pricing-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .pricing-card {
+        max-width: 100%;
+    }
+
+    .pricing-section h2 {
+        font-size: 30px;
+    }
+
+    .pricing-card h2 {
+        font-size: 24px;
+       
+    }
+
+    .pricing-card h3 {
+        font-size: 22px;
+        margin-bottom: 2rem;
+    }
+    .pricing-card p {
+        margin-bottom: 2rem;
+    }
+
+
+    .title-container h3 {
+        font-size: 0.9rem;
+    }
+}
+
+/* Pour les dispositifs petits (576px à 768px) */
+@media screen and (max-width: 768px) and (min-width: 576px) {
+    .pricing-section {
+        padding: 60px 20%;
+    }
+
+    .pricing-grid {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .pricing-card {
+        max-width: 100%;
+    }
+
+    .pricing-section h2 {
+        font-size: 28px;
+    }
+
+    .pricing-card h2 {
+        font-size: 22px;
+    }
+
+    .pricing-card h3 {
+        font-size: 20px;
+        margin-bottom: 2rem;
+    }
+
+    .pricing-card p {
+        font-size: 16px;
+        margin-bottom: 2rem;
+    }
+
+    .pricing-card ul li {
+        font-size: 14px;
+    }
+
+    .title-container h3 {
+        font-size: 0.8rem;
+    }
+}
+
+/* Pour les très petits dispositifs (moins de 576px) */
+@media screen and (max-width: 576px) {
+    .pricing-section {
+        padding: 70px 20%;
+    }
+
+    .pricing-grid {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .pricing-card {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .pricing-section h2 {
+        font-size: 24px;
+    }
+
+    .pricing-card h2 {
+        font-size: 20px;
+    }
+
+    .pricing-card h3 {
+        font-size: 18px;
+        margin-bottom: 2rem;
+    }
+
+    .pricing-card p {
+        font-size: 14px;
+        margin-bottom: 2rem;
+    }
+
+    .pricing-card ul li {
+        font-size: 12px;
+        
+    }
+
+    .title-container h3 {
+        font-size: 0.7rem;
+    }
+}

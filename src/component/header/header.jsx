@@ -1,23 +1,15 @@
 import React from 'react';
 import './header.css';
 import image1 from '../../assets/images/image1.png';
+import MainHeader from './mainHeader/mainHeader';
+
 
 
 
 const Header = () => {
     return (
         <header className="header">
-            <nav className="navbar">
-                <div className="logo">Wise<span style={{ color: '#fff' }}>Tech</span></div>
-                <ul className="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-                <a href="#" className="btn-contact">Contact Us</a>
-            </nav>
+        <MainHeader />
 
             <div className="hero-container">
                 <section className="hero">

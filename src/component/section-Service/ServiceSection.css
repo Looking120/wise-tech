@@ -58,3 +58,113 @@
     text-decoration: none;
     border-radius: 10px;
 }
+/* For large devices (tablets and small laptops) */
+@media screen and (max-width: 992px) {
+    .service-section {
+        padding: 30px 0;
+    }
+
+    .service-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .service-image {
+        width: 100%;
+        text-align: center;
+    }
+
+    .service-image img {
+        width: 80%; /* Réduit la largeur de l'image pour les grands appareils */
+        max-width: none; /* Enlève la contrainte max-width pour les ajustements */
+    }
+
+    .service-text {
+        max-width: 100%;
+    }
+
+    .service-text h2 {
+        font-size: 30px;
+    }
+
+    .service-text p {
+        font-size: 14px;
+    }
+}
+
+/* For medium devices (tablets and large phones) */
+@media screen and (max-width: 768px) {
+    .service-section {
+        padding: 20px 0;
+    }
+
+    .service-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .service-image {
+        width: 100%;
+    }
+
+    .service-image img {
+        width: 70%;
+        max-width: none;
+    }
+
+    .service-text h2 {
+        font-size: 24px;
+    }
+
+    .service-text p {
+        font-size: 14px;
+    }
+}
+
+/* For small devices (phones) */
+@media screen and (max-width: 576px) {
+    .service-section {
+        padding: 15px 0;
+    }
+
+    .service-image img {
+        width: 60%; 
+        max-width: none;
+    }
+
+    .service-text h2 {
+        font-size: 20px;
+    }
+
+    .service-text p {
+        font-size: 12px;
+    }
+
+    .btn-explore {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+/* For extra small devices (very small phones) */
+@media screen and (max-width: 350px) {
+    .service-image img {
+        width: 50%;
+        max-width: none;
+    }
+
+    .service-text h2 {
+        font-size: 18px;
+    }
+
+    .service-text p {
+        font-size: 12px;
+    }
+
+    .btn-explore {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}

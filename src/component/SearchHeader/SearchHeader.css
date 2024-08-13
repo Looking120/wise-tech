@@ -1,0 +1,152 @@
+/* Pour les grands écrans */
+.search-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin: 0 300px; 
+}
+
+.search-title {
+    flex: 1;
+    text-align: left;
+    font-size: 20px;
+}
+
+.search-container {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 600px;
+    width: 100%;
+}
+
+.search-container input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: #fd0100;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #ff7373;
+}
+
+/* Pour les écrans moyens (tablettes) */
+@media screen and (max-width: 992px) {
+    .search-header {
+        margin: 0 50px;
+    }
+    
+    .search-title {
+        font-size: 20px;
+    }
+    
+    .search-container {
+        max-width: 500px;
+    }
+    
+    .search-container input[type="text"] {
+        width: 60%;
+    }
+    
+    .search-container button {
+        padding: 8px 16px;
+    }
+}
+
+/* Pour les écrans petits (smartphones) */
+@media screen and (max-width: 768px) {
+    .search-header {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 20px;
+        padding: 2rem;
+    }
+    
+    .search-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .search-container {
+        max-width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .search-container input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .search-container button {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
+
+/* Pour les très petits écrans (mobiles très petits) */
+@media screen and (max-width: 576px) {
+    .search-header {
+        margin: 0 10px;
+        padding: 2rem;
+        margin-bottom: 3rem;
+    }
+    
+    .search-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .search-container {
+        max-width: 100%;
+    }
+    
+    .search-container input[type="text"] {
+        padding: 8px;
+    }
+    
+    .search-container button {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+/* Pour les écrans très petits (ex. certains téléphones très étroits) */
+@media screen and (max-width: 350px) {
+    .search-header {
+        margin: 0 5px;
+        padding: 2rem;
+        margin-bottom: 3rem;
+    }
+    
+    .search-title {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    
+    .search-container {
+        flex-direction: column;
+    }
+    
+    .search-container input[type="text"] {
+        padding: 6px;
+    }
+    
+    .search-container button {
+        padding: 6px;
+        font-size: 12px;
+    }
+}

@@ -48,4 +48,103 @@
     font-weight: 600;
     text-decoration: none;
 }
+/* For large devices (tablets and smaller desktops) */
+@media screen and (max-width: 992px) {
+    .optimize-section {
+        padding: 30px 0;
+    }
+
+    .optimize-section h2 {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .optimize-cards {
+        flex-direction: column;
+    }
+
+    .optimize-card {
+        margin-bottom: 20px;
+    }
+
+    .learn-more {
+        padding: 8px 16px;
+    }
+}
+
+/* For medium devices (tablets) */
+@media screen and (max-width: 768px) {
+    .optimize-section {
+        padding: 20px 0;
+    }
+
+    .optimize-section h2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .optimize-card h4 {
+        font-size: 20px;
+    }
+
+    .optimize-card p {
+        font-size: 14px;
+    }
+
+    .learn-more {
+        padding: 8px 14px;
+    }
+}
+
+/* For small devices (mobile phones) */
+@media screen and (max-width: 576px) {
+    .optimize-section {
+        padding: 15px 0;
+    }
+
+    .optimize-section h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .optimize-card h4 {
+        font-size: 18px;
+    }
+
+    .optimize-card p {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .learn-more {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}
+
+/* For very small devices (extra small mobile phones) */
+@media screen and (max-width: 350px) {
+    .optimize-section {
+        padding: 10px 0;
+    }
+
+    .optimize-section h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .optimize-card h4 {
+        font-size: 16px;
+    }
+
+    .optimize-card p {
+        font-size: 11px;
+        margin-bottom: 10px;
+    }
+
+    .learn-more {
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+}
 

@@ -49,7 +49,6 @@
 }
 
 /* Images centrées */
-
 .center-images {
     position: absolute;
     top: 50%;
@@ -62,7 +61,6 @@
     justify-content: center;
     z-index: 1;
     overflow: hidden;
-    
 }
 
 .center-images img {
@@ -95,25 +93,6 @@
 .center-images img:nth-child(9) { animation-delay: 64s; }
 .center-images img:nth-child(10) { animation-delay: 72s; }
 .center-images img:nth-child(11) { animation-delay: 80s; }
-
-/* Animation des images */
-@keyframes fadeInOut {
-    0% {
-        opacity: 0;
-    }
-    10% {
-        opacity: 1;
-    }
-    30% {
-        opacity: 1;
-    }
-    40% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
-}
 
 /* Contenu de la bannière */
 .banner-content {
@@ -150,4 +129,171 @@
     display: inline-block;
     margin-top: 15px;
     border-radius: 10px;
+}
+
+/* Responsive for large devices (iPad Pro, etc.) */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .banner-section {
+        width: 85%; /* Ajuster la largeur pour ces écrans */
+        padding: 15px; /* Réduire un peu le padding */
+    }
+    .center-images {
+        width: 50%; /* Ajuster la taille des images centrées */
+        height: auto;
+    }
+    .image-main {
+        width: 90px; /* Ajuster la taille de l'image principale */
+        height: 90px;
+        margin-left: 60px; /* Ajuster la marge gauche */
+    }
+    .banner-content {
+        max-width: 55%; /* Ajuster la largeur du contenu */
+        margin-top: 2rem; /* Ajuster la marge supérieure */
+    }
+    .banner-content h2 {
+        font-size: 1.8rem; /* Ajuster la taille de la police */
+    }
+    .btn-contact-us {
+        padding: 8px 18px; /* Ajuster le padding du bouton */
+        font-size: 0.95rem; /* Ajuster la taille de la police du bouton */
+    }
+}
+
+/* Responsive for medium devices (tablets) */
+@media screen and (max-width: 768px) {
+    .banner-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        width: 90%;
+        position: relative;
+    }
+    .banner-content {
+        max-width: 100%;
+        margin-top: 2rem;
+    }
+    .banner-content h4, 
+    .banner-content h2 {
+        text-align: center;
+        left: 0;
+    }
+    .center-images {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 70%;
+        height: auto;
+        margin-top: 2rem;
+    }
+    .center-images img {
+        width: 100%;
+        height: auto;
+        opacity: 1;
+        animation: none; 
+    }
+    .image-main {
+        width: 90px;
+        height: 90px;
+        margin-left: 15px;
+        margin-top: 15px;
+        left: 2rem;
+    }
+    .banner-image {
+        position: relative;
+        order: 2;
+        right: auto;
+        bottom: auto;
+        margin-top: 3rem;
+        z-index: 1;
+        width: 80%;
+        text-align: center;
+    }
+    .banner-image img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Responsive for small devices (smartphones) */
+@media screen and (max-width: 576px) {
+    .banner-section {
+        width: 100%;
+        margin-top: 2rem;
+        position: relative;
+        margin-top: 7rem;
+    }
+    .center-images {
+        width: 80%;
+        height: auto;
+        margin-top: 1rem;
+    }
+    .center-images img {
+        width: 100%;
+        height: auto;
+        opacity: 0; 
+        animation: none;
+    }
+    .banner-content h2 {
+        font-size: 1.5rem;
+    }
+    .btn-contact-us {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+    .image-main {
+        width: 80px;
+        height: 80px;
+        margin-left: 10px;
+        margin-top: 10px;
+        left: 2rem;
+    }
+    .banner-image {
+        width: 90%;
+        margin-top: 2rem;
+        order: 2;
+        position: relative;
+        margin-top: 5rem;
+    }
+}
+
+/* Responsive for extra small devices (very small smartphones) */
+@media screen and (max-width: 350px) {
+    .banner-section {
+        width: 100%;
+        padding: 5px;
+        margin-top: 7rem;
+    }
+    .center-images {
+        width: 100%;
+        height: auto;
+        margin-top: 0.5rem;
+    }
+    .center-images img {
+        width: 100%;
+        height: auto;
+        opacity: 1; 
+        animation: none;
+    }
+    .banner-content h2 {
+        font-size: 1.2rem;
+    }
+    .btn-contact-us {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+    .image-main {
+        width: 70px;
+        height: 70px;
+        margin-left: 5px;
+        margin-top: 5px;
+        left: 2rem;
+    }
+    .banner-image {
+        width: 100%;
+        margin-top: 1.5rem;
+        order: 2;
+        position: relative;
+    }
 }

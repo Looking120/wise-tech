@@ -1,0 +1,236 @@
+.testimonials-section h3 {
+    color: #fd0100;
+    text-transform: uppercase;
+    margin: 20px 0 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.testimonials-section h4 {
+    color: #333;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    font-size: 2rem;
+    margin: 0 0 30px 0;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.testimonials-section, .pricing-section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonials-grid {
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-auto-rows: 300px; 
+}
+
+.testimonial-item {
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #f3d1bf; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-item.highlighted {
+    background-color: #fff;
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.client-photo {
+    width: 80px; 
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+}
+
+.testimonial-item h4 {
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+}
+.testimonial-item p{
+    color: #605555;
+    font-size: 1.2rem;
+}
+.testimonial-item .company {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.rating {
+    color: #f6d021;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.see-all-btn {
+    display: block;
+    background-color: #fd0100;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 50px auto 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 40px;
+    }
+
+    .testimonial-item {
+        padding: 20px; 
+    }
+
+    .testimonial-item h4 {
+        font-size: 1rem; 
+    }
+
+    .testimonial-item p {
+        font-size: 1rem; 
+    }
+
+    .testimonial-item .company {
+        font-size: 0.8rem; 
+    }
+
+    .rating {
+        font-size: 1rem; 
+    }
+
+    .see-all-btn {
+        padding: 8px 16px; 
+    }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .testimonials-grid {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 40px;
+    }
+
+    .testimonial-item {
+        padding: 20px;
+    }
+
+    .testimonial-item h4 {
+        font-size: 1rem;
+    }
+
+    .testimonial-item p {
+        font-size: 1rem;
+    }
+
+    .testimonial-item .company {
+        font-size: 0.8rem;
+    }
+
+    .rating {
+        font-size: 1rem;
+    }
+
+    .see-all-btn {
+        padding: 8px 16px;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 576px) {
+    .testimonials-grid {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 30px;
+    }
+
+    .testimonial-item {
+        padding: 30px; 
+    }
+
+    .testimonial-item h4 {
+        font-size: 0.9rem; 
+    }
+
+    .testimonial-item p {
+        font-size: 0.9rem; 
+    }
+
+    .testimonial-item .company {
+        font-size: 0.7rem; 
+    }
+
+    .rating {
+        font-size: 0.9rem; 
+    }
+
+    .see-all-btn {
+        padding: 6px 12px; 
+    }
+}
+
+/* For extra small devices */
+@media screen and (max-width: 350px) {
+    .testimonials-grid {
+        grid-template-columns: repeat(1, 1fr); 
+        padding: 50px;
+    }
+
+    .testimonial-item {
+        padding: 8px; 
+    }
+
+    .testimonial-item h4 {
+        font-size: 0.8rem; 
+    }
+
+    .testimonial-item p {
+        font-size: 0.8rem; 
+    }
+
+    .testimonial-item .company {
+        font-size: 0.6rem; 
+    }
+
+    .rating {
+        font-size: 0.8rem; 
+    }
+
+    .see-all-btn {
+        padding: 5px 10px; 
+    }
+}

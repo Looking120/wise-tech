@@ -1,0 +1,301 @@
+/* General styles for the team section */
+.team-section {
+    padding: 40px;
+    margin: 0 100px;
+}
+
+.team-header h3 {
+    color: #fd0100;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.team-header h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin: 0 0 30px 0;
+    line-height: 1.2;
+}
+
+/* Carousel container */
+.team-carousel {
+    display: flex;
+    overflow: hidden; /* Hide images that are out of view */
+    position: relative; /* Positioning for controls */
+    margin-bottom: 20px;
+}
+
+/* Individual team member */
+.team-member {
+    flex: 0 0 100%; 
+    max-width: 100%; 
+    box-sizing: border-box;
+    transition: transform 0.5s ease-in-out; 
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    position: relative; /* Ensure positioning for image */
+}
+
+.team-member img {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #3a3c56;
+    box-sizing: border-box;
+}
+
+/* Carousel controls */
+.carousel-controls {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    font-size: 24px;
+    cursor: pointer;
+    color: #fd0100;
+}
+
+/* Carousel indicators */
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.indicator {
+    width: 8px;
+    height: 8px;
+    background-color: #b0b6c1;
+    border-radius: 50%;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: #fd0100;
+}
+
+/* CTC section */
+.ctc-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+    border-radius: 8px;
+    gap: 100px;
+}
+
+.ctc-image {
+    flex: 0 0 500px;
+}
+
+.ctc-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.ctc-quote {
+    position: relative;
+    max-width: 70%;
+    padding: 20px;
+    padding-right: 100px;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+}
+
+.ctc-quote h4 {
+    color: #fd0100;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: left;
+    z-index: 1;
+}
+
+.ctc-quote p {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    text-align: left;
+    z-index: 1;
+    color: #b0b6c1;
+}
+
+.ctc-quote span {
+    display: block;
+    color: #b0b6c1;
+    font-size: 1rem;
+    text-align: left;
+    z-index: 1;
+}
+
+
+/* For large devices (tablets and smaller desktops) */
+@media screen and (max-width: 992px) {
+    .team-section {
+        margin: 0 50px;
+    }
+
+    .team-member {
+        width: 80%;
+    }
+
+    .team-member img {
+        width: 80%;
+    }
+
+    .team-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-controls {
+        width: 40px;
+    }
+
+    .ctc-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .ctc-image {
+        flex: 0 0 100%;
+    }
+
+    .ctc-quote {
+        max-width: 100%;
+        padding-right: 20px;
+    }
+}
+
+/* For medium devices (mobile landscape and smaller tablets) */
+@media screen and (max-width: 768px) {
+    .team-section {
+        margin: 0 20px;
+    }
+
+    .team-member {
+        width: 90%;
+    }
+
+    .team-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .team-member img {
+        width: 80%; /* Increase image size on medium devices */
+    }
+
+    .carousel-controls {
+        width: 30px;
+    }
+
+    .ctc-section {
+        gap: 20px;
+    }
+
+    .ctc-image {
+        flex: 0 0 100%;
+    }
+
+    .ctc-quote {
+        max-width: 100%;
+        padding-right: 20px;
+    }
+}
+
+/* For small devices (mobile portrait) */
+@media screen and (max-width: 576px) {
+    .team-section {
+        margin: 0 10px;
+        padding: 20px;
+    }
+
+    .team-member {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .team-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .team-member img {
+        width: 80%; /* Increase image size on small devices */
+    }
+
+    .carousel-controls {
+        width: 30px;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 20px;
+    }
+
+    .ctc-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .ctc-image {
+        flex: 0 0 100%;
+    }
+
+    .ctc-quote {
+        max-width: 100%;
+        padding-right: 0;
+        margin-top: 2rem;
+    }
+    
+    .ctc-quote h4 {
+        font-size: 1.3rem;
+    }
+
+    .ctc-quote p {
+        font-size: 1rem;
+    }
+
+    .ctc-quote span {
+        font-size: 0.9rem;
+    }
+}
+
+/* For extra small devices (very small mobile screens) */
+@media screen and (max-width: 350px) {
+    .team-member {
+        padding: 10px;
+    }
+
+    .team-member img {
+        width: 80%; /* Increase image size on very small screens */
+    }
+
+    .carousel-controls {
+        font-size: 18px;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 15px;
+    }
+
+    .ctc-quote h4 {
+        font-size: 1.2rem;
+    }
+
+    .ctc-quote p {
+        font-size: 1.2rem;
+    }
+
+    .ctc-quote span {
+        font-size: 0.9rem;
+    }
+}
