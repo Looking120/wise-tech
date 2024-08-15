@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet, HelmetProvider } from 'react-helmet-async'; // Import de react-helmet-async
 import Header from '../../component/header/header';
 import './HomePages.css';
 import About from '../../component/section-About/About';
@@ -24,7 +25,12 @@ import Portfolio from '../../component/section-Portfolio/Portfolio';
 
 const HomePages = () => {
     return (
-        <>
+        <HelmetProvider>
+            <Helmet>
+                <title>WiseTech Home Page</title> 
+                <meta name="description" content="Welcome to our homepage where we showcase our work and services." /> 
+            </Helmet>
+
             <Header />
             <div className="container">
                 <About />
@@ -52,7 +58,7 @@ const HomePages = () => {
                 <CtaSection />
                 <Footer />
             </div>
-        </>
+        </HelmetProvider>
     );
 }
 
