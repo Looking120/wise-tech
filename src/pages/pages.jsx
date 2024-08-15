@@ -1,13 +1,11 @@
 import React from 'react';
-
-import HomePages from './Home-pages/HomePages';
+import { Outlet } from 'react-router-dom';
 
 const Pages = () => {
     return (
-
-        <>
-            <HomePages />
-        </>
+    <div>
+        <Outlet />
+    </div>
     );
 }
 
