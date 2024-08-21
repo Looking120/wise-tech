@@ -5,92 +5,109 @@ import teamsImg2 from '../../assets/images/imgTeams/profile.png';
 import teamsImg3 from '../../assets/images/imgTeams/amadou-oury-bah.png';
 import teamsImg4 from '../../assets/images/imgTeams/ctc-image.png';
 import teamsImg5 from '../../assets/images/imgTeams/success_Stoc.png';
+import { Container, Typography, Grid, Box, Avatar, IconButton } from '@mui/material';
+import { GitHub, Instagram, LinkedIn, Twitter } from '@mui/icons-material';
+
 
 const TeamSection = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-
-    const handlePrev = () => {
-        setCurrentIndex((prevIndex) => (prevIndex === 0 ? teamMembers.length - 1 : prevIndex - 1));
-    };
-
-    const handleNext = () => {
-        setCurrentIndex((prevIndex) => (prevIndex === teamMembers.length - 1 ? 0 : prevIndex + 1));
-    };
-
-    return (
-        <section className="team-section">
-            <div className="team-header">
-                <h3>OUR TEAM</h3>
-                <h2>Team of Developers<br />and the rest of the company</h2>
-            </div>
-            
-            <div className="team-carousel">
-                {teamMembers.map((member, index) => (
-                    <TeamMember 
-                        key={index} 
-                        image={member.image} 
-                        name={member.name} 
-                        position={member.position} 
-                        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-                    />
-                ))}
-            </div>
-        
-            <div className="carousel-indicators">
-                {teamMembers.map((_, index) => (
-                    <span 
-                        key={index} 
-                        className={`indicator ${index === currentIndex ? 'active' : ''}`}
-                        onClick={() => setCurrentIndex(index)}
-                    />
-                ))}
-            </div>
-        
-            <div className="ctc-section">
-                <div className="ctc-image">
-                    <img src={teamsImg4} alt="Nathan Musoko Kalenga" />
-                </div>
-                <div className="ctc-quote">
-                    <h4>CTO</h4>
-                    <p>WiseTech is a strategic digital partner. Our expertise in designing and
-                        integrating innovative solutions improves the efficiency and usability of your ideas. Entrust us with your 
-                        projects to obtain high-quality technological products that will propel your business to new heights.</p>
-                    <span>Nathan Musoko Kalenga<br />CTO</span>
-                </div>
-            </div>
-        </section>
-    );
-};
-
-const TeamMember = ({ image, name, position, style }) => (
-    <div className="team-member" style={style}>
-        <img src={image} alt={name} />
-        <h4>{name}</h4>
-        <p>{position}</p>
-    </div>
-);
 
 const teamMembers = [
     {
-        image: teamsImg1,
-        name: "Water Kalubi",
-        position: "C.O"
+        name: 'Water Kalubi',
+        role: 'CEO',
+        img: teamsImg1,
     },
     {
-        image: teamsImg2,
-        name: "Joshua Ndayi",
-        position: "Front-end Developer"
+        name: 'Amadou Oury Bah',
+        role: 'Front end programmer',
+        img: teamsImg3,
     },
     {
-        image: teamsImg3,
-        name: "Amadou Oury Bah",
-        position: "Logistics Expert"
+        name: 'Deja Brady',
+        role: 'Front end programmer',
+        img: teamsImg2,
     },
     {
-        image: teamsImg5,
-        name: "Izabella Tabakova",
-        position: "Secrete General"
-    }
-];
+        name: 'Harrison Stein',
+        role: 'Secretary',
+        img: teamsImg5,
+    },
+    ];
+
+    return (
+        <section className="team-section">
+        <Box sx={{ textAlign: 'center', py: 6 }}>
+            <Typography variant="h3" component="div" sx={{ fontWeight: 'bold', mb: 2 , color:'#fd0100'}}>
+                OUR TEAM
+            </Typography>
+            <Typography variant="h4" component="div" sx={{ mb: 6 }}>
+                Team of Developers<br />and the rest of the company
+            </Typography>
+
+            <Container maxWidth="lg">
+                <Grid container spacing={4} justifyContent="center">
+                    {teamMembers.map((member, index) => (
+                        <Grid item xs={12} sm={6} md={3} key={index}>
+                            <Box sx={{
+                                textAlign: 'center',
+                                boxShadow: 2,
+                                borderRadius: 2,
+                                padding: 2,
+                                transition: 'transform 0.3s',
+                                '&:hover': {
+                                    transform: 'translateY(-5px)',
+                                },
+                            }}>
+                                <Avatar
+                                    src={member.img}
+                                    alt={member.name}
+                                    sx={{ width: 120, height: 120, margin: '0 auto 16px auto' }}
+                                />
+                                <Typography variant="h6" component="div" sx={{ fontWeight: 'bold' }}>
+                                    {member.name}
+                                </Typography>
+                                <Typography variant="subtitle1" sx={{ color: 'gray' }}>
+                                    {member.role}
+                                </Typography>
+                                <Box sx={{ mt: 2 }}>
+                                    <IconButton aria-label="facebook">
+                                        <GitHub sx={{ color: 'black' }} />
+                                    </IconButton>
+                                    <IconButton aria-label="instagram">
+                                        <Instagram sx={{ color: '#E1306C' }} />
+                                    </IconButton>
+                                    <IconButton aria-label="linkedin">
+                                        <LinkedIn sx={{ color: '#0077B5' }} />
+                                    </IconButton>
+                                    <IconButton aria-label="twitter">
+                                        <Twitter sx={{ color: '#1DA1F2' }} />
+                                    </IconButton>
+                                </Box>
+                            </Box>
+                        </Grid>
+                    ))}
+                </Grid>
+            </Container>
+        </Box>
+
+        <Box className="ctc-section" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', py: 6 }}>
+            <Box sx={{ flex: 1, textAlign: 'center' }}>
+                <img src={teamsImg4} alt="Nathan Musoko Kalenga" style={{ maxWidth: '100%', borderRadius: '10px' }} />
+            </Box>
+            <Box sx={{ flex: 1, padding: { xs: 3, md: 6 }, textAlign: 'left' }}>
+                <Typography variant="h4" component="div" sx={{ mb: 3, fontWeight: 'bold' }}>
+                    CTO
+                </Typography>
+                <Typography variant="body1" sx={{ mb: 3, color: 'gray' }}>
+                    WiseTech is a strategic digital partner. Our expertise in designing and integrating innovative solutions improves the efficiency and usability of your ideas. Entrust us with your projects to obtain high-quality technological products that will propel your business to new heights.
+                </Typography>
+                <Typography variant="subtitle1" sx={{ fontWeight: 'bold' }}>
+                    Nathan Musoko Kalenga<br />CTO
+                </Typography>
+            </Box>
+        </Box>
+    </section>
+);
+};
 
 export default TeamSection;

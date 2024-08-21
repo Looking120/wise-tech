@@ -9,7 +9,7 @@
 .timeline-item {
     position: relative;
     padding: 20px 0;
-    border-left: 2px solid #f3d1bf;
+    border-left: 2px solid #7b848d;
     margin-left: 20px;
     transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
 }

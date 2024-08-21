@@ -1,4 +1,5 @@
 import React from 'react';
+import { Box, colors } from '@mui/material';
 import FaqItem from './FaqItem'; 
 
 const FaqRight = () => {
@@ -24,15 +25,19 @@ const FaqRight = () => {
     return (
         <div className="faq-right-box">
             <div className="faq-right">
-                {faqItems.map((item, index) => (
-                    <FaqItem 
-                        key={index} 
-                        question={item.question} 
-                        answer={item.answer} 
-                    />
-                ))}
+            <Box sx={{ padding: 2 }}>
+            {faqItems.map((item, index) => (
+                <FaqItem 
+                    key={index} 
+                    question={item.question} 
+                    answer={item.answer} 
+                />
+            ))}
+        </Box>
             </div>
+
         </div>
+
     );
 };
 
