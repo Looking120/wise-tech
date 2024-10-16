@@ -26,12 +26,7 @@ const MainHeader = () => {
                                 About
                             </a>
                         </li>
-                        <li className="nav-items">
-                            <a href="" className="nav-link">
-                                <i className="uil uil-file-info-alt nav-icons"></i>
-                                Skills
-                            </a>
-                        </li>
+
                         <li className="nav-items">
                             <a href="" className="nav-link">
                                 <i className="uil uil-receipt nav-icons"></i>

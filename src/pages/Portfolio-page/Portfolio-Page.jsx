@@ -1,8 +1,8 @@
 import React from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async'; 
-import Skills from '../../newComponent/skills/skills';
+import Portfolio from '../../newComponent/portfolio/potrtfolio';
 
-const SkillsPage = () => {
+const PortfolioPage = () => {
     return (
         <HelmetProvider> 
             <Helmet>
@@ -10,10 +10,10 @@ const SkillsPage = () => {
                 <meta name="description" content="Explore the skills and expertise we offer." /> 
             </Helmet>
             <div>
-                <Skills />
+                <Portfolio />
             </div>
         </HelmetProvider> 
     );
 }
 
-export default SkillsPage;
+export default PortfolioPage ;
